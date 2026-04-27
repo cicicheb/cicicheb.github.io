@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Chen | Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Rubik:wght@500;700&バランスdisplay=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pale-yellow: #fdf6e3; 
+            --accent-gold: #b58900;
+            --dark-grey: #2a2a2a;
+            --soft-orange: #ff9f43;
+            --slate-blue: #5B7C99;   
+        }
+
+        body {
+            background-color: var(--pale-yellow);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-grey);
+            margin: 0;
+            padding: 40px 5%;
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1.name {
+            font-family: 'Rubik', sans-serif;
+            font-size: 3rem;
+            color: var(--dark-grey);
+            margin-bottom: 10px;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--soft-orange);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,159,67,0.3);
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 80vh;
+            background: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <div class="header-area">
+            <h1 class="name">RESUME</h1>
+            <div class="btn-row">
+                <a href="index.html" class="cta-button" style="background: var(--slate-blue);">← Back Home</a>
+                <a href="SC Resume.pdf" download class="cta-button">Download PDF</a>
+            </div>
+        </div>
+
+        <div class="pdf-viewer">
+            <iframe src="SC Resume.pdf"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
